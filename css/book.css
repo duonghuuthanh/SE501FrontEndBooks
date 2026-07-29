@@ -1,0 +1,121 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/* CSS HEADER */ 
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.menu {
+    background: linear-gradient(white, blue 70%);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu > li {
+    border-right: 1px solid darkblue;
+}
+
+.menu > li:last-child {
+    border-right: none;
+}
+
+.menu > li > a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+.menu > li > a:hover {
+    background-color: darkblue;
+}
+
+.subject {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    text-align: center;
+    color: darkblue;
+    text-shadow: 2px 3px 2px skyblue;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+}
+
+.sub:hover .submenu {
+    display: block;
+}
+
+.submenu::after {
+    content: " ";
+    border-width: 15px;
+    border-color: transparent transparent white transparent;
+    border-style: solid;
+    position: absolute;
+    bottom: 100%;
+    left: 42%;
+}
+
+/* CSS BODY */
+.book {
+    width: 20%;
+    padding: 10px;
+}
+
+.book > div {
+    position: relative;
+    border: 1px solid blue;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.book img {
+    width: 100%;
+    transition: transform 1.5s;
+}
+
+.book img:hover {
+    transform: scale(1.2);
+}
+
+.close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.2rem;
+    text-decoration: none;
+    color: blue;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: brown;
+}
+
+/* CSS FOOTER  */
+footer {
+    background: linear-gradient(blue, white, blue);
+    padding: 2rem;
+    overflow: hidden;
+}
+
+footer > span {
+    animation: move 15s infinite ;
+    position: relative;
+}
+
+@keyframes move {
+    from {
+        left: 0;
+    }
+    to {
+        left: 100%;
+    }
+}
