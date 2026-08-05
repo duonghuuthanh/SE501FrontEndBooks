@@ -1,0 +1,119 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --main-padding: 1rem;
+}
+
+/* CSS HEADER */
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.v-center {
+    align-items: center;
+}
+
+nav {
+    background: linear-gradient(to right bottom, blue, white, lightblue);
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu > li > a {
+    display: block;
+    padding: var(--main-padding);
+    color: darkblue;
+    text-decoration: none;
+}
+
+.brand {
+    background: linear-gradient(to right bottom, lightblue 30%, white, blue);
+    padding: var(--main-padding);
+    margin-top: 5px;
+}
+
+.brand img {
+    max-width: 100%;
+}
+
+.brand > h1 {
+    font-family: Verdana, sans-serif;
+    font-size: 2.7rem;
+    color: blue;
+    text-shadow: 2px 3px 3px skyblue;
+}
+
+/* CSS BODY */
+.topic {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.topic > h2 {
+    background-color: darkblue;
+    color: white;
+    padding: var(--main-padding);
+    margin-bottom: 0;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.topic > .forums {
+    background-color: lightblue;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.forum {
+    padding: var(--main-padding);
+    border-bottom: 1px solid darkblue;
+}
+
+.forum:last-child {
+    border-bottom: none;
+}
+
+.forum img {
+    width: 180px;
+    border-radius: 50%;
+    
+}
+
+/* CSS ADS */
+
+.ads {
+    margin-top: var(--main-padding);
+}
+.ads > div {
+    background: linear-gradient(skyblue, blue);
+    width: 9%;
+    font-size: 1.2rem;
+    text-align: center;
+    color: white;
+    padding: 10rem 0;
+    border-radius: 10px;
+    position: fixed;
+}
+
+.ads > .left {
+    left: 0.5%;
+}
+
+.ads > .right {
+    right: 0.5%;
+}
+
+/* CSS FOOTER */
+footer {
+    background: linear-gradient(skyblue, blue);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 5px;
+}
