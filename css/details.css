@@ -45,7 +45,7 @@ table {
     padding: 5px;
 }
 
-..review-form > div {
+.review-form > div {
     text-align: right;
 }
 
