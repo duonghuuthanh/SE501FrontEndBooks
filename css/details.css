@@ -94,3 +94,19 @@ table {
 .comment p {
     font-style: italic;
 }
+
+/* CSS THUMB */
+
+.thumbs > div {
+    width: 20%;
+    padding: 5px;
+}
+
+.thumbs img {
+    width: 100%;
+}
+
+.thumbs img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
